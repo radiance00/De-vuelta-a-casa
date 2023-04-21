@@ -1,0 +1,189 @@
+header{
+    background:rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+  h1 {
+    color: rgb(255, 0, 0);
+    font-size: xx-large;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color:rgb(255, 10, 10);
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #ffffff;
+  }
+  .slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+  }
+  .btn:active {
+    transform: scale(1.1);
+  }
+  .btn-prev {
+    top: 45%;
+    left: 2%;
+  }
+  .btn-next {
+    top: 45%;
+    right: 2%;
+  }
+  .slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;  /* <===  */
+    border-radius: 15px;
+  }
+  form {
+   color: #fff;
+  }
+body{
+    background-image: url(https://allgamersin.com/wp-content/uploads/2022/06/ResidentEvil4_art.jpg);
+    background-repeat:no-repeat, repeat;
+    right: 30px;
+    width: 95%;
+}
+.footerContent {
+  position: fixed;
+  left: 10px;
+  bottom: 5px;
+  right: 10px;
+  width: 95%;
+  background-color: rgb(17, 0, 255);
+  color: rgb(179, 175, 129);
+  text-align: center;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.container{
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+  width: 800px;
+  padding: 20px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+        background:#000000;
+}
+
+ul.slider li img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1; 
+}
+
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu{
+  text-align: center;
+  margin: 5px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+#visor_imagenes {
+  text-align: center;
+  color: #ff0000;
+  background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
