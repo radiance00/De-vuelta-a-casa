@@ -127,7 +127,7 @@ html, body {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #222;
   }
   .menu > li:not(:last-child) {
