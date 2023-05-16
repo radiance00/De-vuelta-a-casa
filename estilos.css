@@ -105,9 +105,13 @@ h1 {
 	color: rgb(0, 0, 0);
 }
 
+.food {
+	transform: scale(0.5)
+}
+
 #projects .project-img {
 	flex-basis: 50%;
-	height: 400px;
+	height: 50px;
 	overflow: hidden;
 	position: relative;
 }
