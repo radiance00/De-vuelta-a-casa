@@ -46,9 +46,18 @@ html, body {
   padding: 0;
 }
 
+
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
+}
+
+.menu a:link {
+   color: white;
+}
+
+.menu a:visited {
+   color: yellow;  
 }
 
 .menu-button-container {
