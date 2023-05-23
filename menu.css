@@ -51,6 +51,14 @@ html, body {
   overflow: hidden;
 }
 
+
+.menu a:link {
+  color: white;
+}
+.menu a:visited {
+  color: rgb(255, 255, 255);
+}
+
 .menu-button-container {
   display: none;
   height: 100%;
