@@ -38,93 +38,80 @@ p {
 
 h1 {
 	font-family: 'Viga', sans-serif;
+	color: #fcfcfc;
 }
 
-
-
-/* Projects section */
-#projects .projects {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0;
+h2 {
+	font-family: 'Viga', sans-serif;
+	color: #fcfcfc;
 }
 
-#projects .projects-header h1 {
-	margin-bottom: 50px;
+h3 {
+	color: red;
 }
 
-#projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+h4 {
+	color: red;
 }
 
-#projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-
-#projects .project-info h1 {
-	font-size: 4rem;
+button {
+	padding: 1.3em 3em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
 	font-weight: 500;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
 }
 
-#projects .project-info h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
+button:hover {
+	background-color: #00a000;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
 }
 
-#projects .project-info p {
-	color: white;
+button:active {
+	transform: translateY(-1px);
 }
 
-#projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-}
-
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
+div {
+	display: block;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	padding: 0px;
+	border: none;
+	box-sizing: content-box;
+	font-size: 1rem;
+	text-decoration: none;
+	background: rgb(84, 125, 129);
+	color: #000;
 }
 
-#projects .project-img img {
-	transition: 0.3s ease transform;
+.donation {
+	display: flex;
+	flex-direction: column;	
+	margin: auto;
+	width: 30%;
+	border: 3px solid rgb(242, 247, 242);
+	padding: 10px;	
 }
 
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
+.donation input{
+	width: 50%;
 }
 
-/* End Projects section */
-​
+.donation h1{
+	margin-bottom: 10px;
+}
 
+.payment_form{
+	margin: auto;
+	width: 90%;		
+	margin-left: 28% !important;
+}
