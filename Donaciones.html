@@ -1,11 +1,15 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./Estilosdona.css">
   <link rel="stylesheet" href="./menu.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
   <title>De Vuelta a casa</title>
 </head>
+
 <body>
   <!-- Header -->
   <section class="top-nav">
@@ -14,67 +18,49 @@
     <label class='menu-button-container' for="menu-toggle">
       <div class='menu-button'></div>
     </label>
-    <center><h1>Donaciones</h1></center>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
+    <h1>Donaciones</h1>
     <ul class="menu">
-      <li><h1>Inicio</h1></li>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
-      <li><h1>¡Adopción!</h1></li>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
-      <li><h1>¡Donaciones</h1></li>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
-      <li><h1>Tienda</h1></li>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
+      <li>
+        <h1>Inicio</h1>
+      </li>
+      <li>
+        <h1>¡Adopción!</h1>
+      </li>
+      <li>
+        <h1>¡Donaciones</h1>
+      </li>
+      <li>
+        <h1>Tienda</h1>
+      </li>
     </ul>
   </section>
   <!-- End Header -->
-</html>
-<div>
-  <center><div class="div"></center>
-  <p class="input-container">
-    <center><h1>Nombre</h1></center>
-    <center><input type="text" placeholder= "Nombre" name="text" id="text" class="input-field" autocomplete="name"></center>
-<p class="input-container">
-  <center><h1>Email</h1></center>
-    <center><input type="text" placeholder="@Gmail" name="text" id="text" class="input-field" autocomplete="name"></center>
-  <center><p class="input-container"></center>
-    <center><h1>Cantidad que se desea donar</h1></center>
-    <center><input type="text" placeholder="$" name="text" id="text" class="input-field" autocomplete="name"></center>
-    <center><h1>Metodo de pago</h1></center>
-    <br>
-    <button style="position:absolute; top:235; left:500;">Debito</button>
-    <button style="position:absolute; top:235; left:640;">Credito</button>
-  <center></div></center>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h2>Si desea donar presencialmente puede realizar el deposito a la siguiente tarjeta</h2>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
-  <br>
-  <center><h1>Nombre</h1></center>
-    <center><input type="text" placeholder="Nombre" name="text" id="text" class="input-field" autocomplete="name"></center>
-    <h3 style="position:absolute; top:385; left:550;">¡Es obligatorio ingresar el nombre!</h3>
-    <br>
-  <center><h1>Gmail</h1></center>
-    <center><input type="text" placeholder="@gmail" name="text" id="text" class="input-field" autocomplete="name"></center>
-    <h4 style="position:absolute; top:450; left:550;">¡Es obligatorio ingresar el correo!</h4>
-    <br>
-    <br>
-    <center><h1>Numero de tarjeta de credito</h1></center>
-    <center><input type="text" placeholder="***********************" name="text" id="text" class="input-field" autocomplete="name"></center>
-    <button style="position:absolute; top:520; left:570;">Enviar</button>
 
+  <div class="donation">
+    <form class="payment_form">
+      <h1>Nombre</h1>
+      <input type="text" placeholder="Nombre" name="text" id="text" class="input-field" autocomplete="name">
+      <p class="input-container">
+      <h1>Email</h1>
+      <input type="text" placeholder="@Gmail" name="text" id="text" class="input-field" autocomplete="name">
+      <p class="input-container">
+      <h1>Cantidad que se desea donar</h1>
+      <input type="text" placeholder="$" name="text" id="text" class="input-field" autocomplete="name">           
+      <h1>Nombre</h1>
+      <input type="text" placeholder="Nombre" name="name" id="name" class="input-field" required>
+      <h1>Mail</h1>
+      <input type="email" placeholder="mail@domain.com" name="email" id="email" class="input-field">
+      <h1>Numero de tarjeta</h1>
+      <input type="text" name="text" id="text" class="input-field">
+      <br/>
+      <br/>
+      <button type="submit">Enviar</button>
+    </form>
+    </section>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
