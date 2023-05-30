@@ -101,7 +101,7 @@ h2 {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323C 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323C 0%, #ffffff 100%);
 	color: rgb(0, 0, 0);
 }
 
