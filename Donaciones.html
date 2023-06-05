@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./menu.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <title>De Vuelta a casa</title>
 </head>
 
@@ -17,46 +18,40 @@
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
       <div class='menu-button'></div>
-    </label>    
+    </label>
     <ul class="menu">
-      <li>
-        <h1>Inicio</h1>
-      </li>
-      <li>
-        <h1>¡Adopción!</h1>
-      </li>
-      <li>
-        <h1>¡Donaciones</h1>
-      </li>
-      <li>
-        <h1>Tienda</h1>
-      </li>
-    </ul>
+      <li><a href="index.html">Inicio!</a></li>
+      <li><a href="Adopcion.html">Adopcion!</a></li>
+      <li><a href="Donaciones.html">Donaciones!</a></li>
+      <li><a href="Ventas.html">Ventas!</a></li>
+      <li><a href="Contacto.html">Contacto!</a></li>
+    </ul>    
   </section>
-  <!-- End Header -->
-
   <div class="donation">
     <form class="payment_form">
       <h1>Donaciones</h1>
-      <h1>Nombre</h1>
-      <input type="text" placeholder="Nombre" name="text" id="text" class="input-field" autocomplete="name">
-      <p class="input-container">
-      <h1>Email</h1>
-      <input type="text" placeholder="@Gmail" name="text" id="text" class="input-field" autocomplete="name">
-      <p class="input-container">
-      <h1>Cantidad que se desea donar</h1>
-      <input type="text" placeholder="$" name="text" id="text" class="input-field" autocomplete="name">           
-      <h1>Nombre</h1>
-      <input type="text" placeholder="Nombre" name="name" id="name" class="input-field" required>
-      <h1>Mail</h1>
-      <input type="email" placeholder="mail@domain.com" name="email" id="email" class="input-field">
-      <h1>Numero de tarjeta</h1>
-      <input type="text" name="text" id="text" class="input-field">
-      <br/>
-      <br/>
+      <div class="input-container">
+        <h1>Nombre</h1>
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="input-field" autocomplete="name">
+      </div>
+      <div class="input-container">
+        <h1>Email</h1>
+        <input type="email" placeholder="@Gmail" name="email" id="email" class="input-field" autocomplete="email">
+      </div>
+      <div class="input-container">
+        <h1>Cantidad que se desea donar</h1>
+        <input type="text" placeholder="$" name="cantidad" id="cantidad" class="input-field" autocomplete="off">
+      </div>
+      <div class="input-container">
+        <h1>Numero de tarjeta</h1>
+        <input type="text" name="tarjeta" id="tarjeta" class="input-field">
+      </div>
+      <br />
+      <br />
       <button type="submit">Enviar</button>
     </form>
-    </section>
+  </div>
+  </section>
 </body>
 
 <footer>
