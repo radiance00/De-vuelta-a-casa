@@ -1,62 +1,46 @@
 body {
 	background-image: url(https://thumbs.dreamstime.com/b/fondo-seco-de-la-comida-perro-alimento-para-animales-124173068.jpg);
 	background-repeat: repeat;
-}
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
-}
-
-a {
-	text-decoration: none;
-}
-
-.container {
+	background-size: cover;
+  }
+  
+  .container {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-p {
-	color: black;
-	font-size: 1.4rem;
-	margin-top: 5px;
-	line-height: 2.5rem;
-	font-weight: 300;
-	letter-spacing: 0.05rem;
-}
-
-h1 {
-	font-family: 'Viga', sans-serif;
-	color: #fcfcfc;
-}
-
-h2 {
-	font-family: 'Viga', sans-serif;
-	color: #fcfcfc;
-}
-
-h3 {
-	color: red;
-}
-
-h4 {
-	color: red;
-}
-
-button {
-	padding: 1.3em 3em;
-	font-size: 12px;
+	padding: 20px;
+	box-sizing: border-box;
+  }
+  
+  .donation {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 500px;
+	border: 3px solid rgb(242, 247, 242);
+	padding: 20px;
+	background-color: rgb(84, 125, 129);
+	color: #fff;
+	margin-top: 60px;
+  }
+  
+  .donation input[type="text"],
+  .donation input[type="email"] {
+	width: 100%;
+	padding: 8px;
+	font-size: 1.6rem;
+	border: none;
+	background: rgba(255, 255, 255, 0.5);
+	margin-bottom: 10px;
+	color: #000;
+  }
+  
+  .donation button[type="submit"] {
+	width: 100%;
+	padding: 12px;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	letter-spacing: 2.5px;
 	font-weight: 500;
@@ -68,50 +52,76 @@ button {
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	outline: none;
-}
-
-button:hover {
+  }
+  
+  .donation button[type="submit"]:hover {
 	background-color: #00a000;
 	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 	color: #fff;
 	transform: translateY(-7px);
-}
-
-button:active {
+  }
+  
+  .donation button[type="submit"]:active {
 	transform: translateY(-1px);
-}
-
-div {
-	display: block;
+  }
+  
+  .top-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
-	padding: 0px;
-	border: none;
-	box-sizing: content-box;
-	font-size: 1rem;
+	background-color: rgb(84, 125, 129);
+	z-index: 1;
+  }
+  
+  .menu {
+	list-style: none;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+  }
+  
+  .menu li {
+	display: inline-block;
+	margin-right: 10px;
+  }
+  
+  .menu a {
+	color: #fff;
 	text-decoration: none;
-	background: rgb(84, 125, 129);
-	color: #000;
-}
-
-.donation {
-	display: flex;
-	flex-direction: column;	
-	margin: auto;
-	width: 30%;
-	border: 3px solid rgb(242, 247, 242);
-	padding: 10px;	
-}
-
-.donation input{
-	width: 50%;
-}
-
-.donation h1{
-	margin-bottom: 10px;
-}
-
-.payment_form{
-	margin: auto;
-	width: 90%;		
-	margin-left: 28% !important;
-}
+	font-size: 1.4rem;
+	padding: 10px;
+  }
+  
+  .menu a:hover {
+	color: #ffc107;
+  }
+  
+  .menu-button-container {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px;
+  }
+  
+  .menu-button {
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin-bottom: 5px;
+  }
+  
+  .menu-button:before,
+  .menu-button:after {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: #fff;
+	margin-bottom: 5px;
+  }
+  
+  .menu-button-container:hover .menu-button:before,
+  .menu-button-container:hover .menu-button:after {
+	background-color: #ffc107;
+  }
+  

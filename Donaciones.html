@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,56 +11,54 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <title>De Vuelta a casa</title>
 </head>
+
 <body>
   <!-- Header -->
-  <section class="top-nav">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" width="30" height="30" alt="img">
-    <input id="menu-toggle" type="checkbox" />
-    <label class='menu-button-container' for="menu-toggle">
-      <div class='menu-button'></div>
-    </label>
-    <ul class="menu">
-      <li><a href="index.html">Inicio!</a></li>
-      <li><a href="Adopcion.html">Adopcion!</a></li>
-      <li><a href="Donaciones.html">Donaciones!</a></li>
-      <li><a href="Ventas.html">Ventas!</a></li>
-      <li><a href="Contacto.html">Contacto!</a></li>
-    </ul>    
-  </section>
-  <!-- End Header -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <header>
+    <section class="top-nav">
+      <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" width="30" height="30" alt="img">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Adopcion.html">Adopción</a></li>
+        <li><a href="Donaciones.html">Donaciones</a></li>
+        <li><a href="Ventas.html">Ventas</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </section>
+  </header>
 
   <div class="donation">
     <form class="payment_form">
       <h1>Donaciones</h1>
-      <h1>Nombre</h1>
-      <input type="text" placeholder="Nombre" name="text" id="text" class="input-field" autocomplete="name">
-      <p class="input-container">
-      <h1>Apellido</h1>
-      <input type="text" placeholder="" name="text" id="text" class="input-field" autocomplete="name">
-      <p class="input-container">
-      <h1>Cantidad que se desea donar</h1>
-      <input type="text" placeholder="$" name="text" id="text" class="input-field" autocomplete="name">           
-      <h1>Gmail</h1>
-      <input type="text" placeholder="@" name="name" id="name" class="input-field" required>
-      <h1>Numero de Tarjeta</h1>
-      <input type="***********" placeholder="************" name="email" id="email" class="input-field">
-      <h1>Fecha de expiración</h1>
-      <input type="**/**" name="text" id="text" class="input-field">
-      <br/>
-      <br/>
+      <div class="input-container">
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="input-field" autocomplete="name">
+      </div>
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" placeholder="@Gmail" name="email" id="email" class="input-field" autocomplete="email">
+      </div>
+      <div class="input-container">
+        <label for="cantidad">Cantidad que se desea donar</label>
+        <input type="text" placeholder="$" name="cantidad" id="cantidad" class="input-field" autocomplete="off">
+      </div>
+      <div class="input-container">
+        <label for="tarjeta">Número de tarjeta</label>
+        <input type="text" name="tarjeta" id="tarjeta" class="input-field">
+      </div>
+      <br>
+      <br>
       <button type="submit">Enviar</button>
     </form>
   </div>
-  </section>
+
+  <footer>
+    <!-- Aquí puedes agregar contenido para el footer -->
+  </footer>
 </body>
 
-<footer>
-
-</footer>
-<img src="https://png.pngtree.com/png-vector/20230329/ourmid/pngtree-cute-white-dog-png-image_6656184.png" alt="img">
 </html>
