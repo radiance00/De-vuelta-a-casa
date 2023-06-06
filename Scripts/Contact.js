@@ -1,11 +1,10 @@
 //Ejemplo de como llamar al api desde jquery.
-const url = 'https://localhost:7235/api/Contact';
+const url = 'http://localhost:8083/api/Contact';
 
 const data = {
-  name: 'string',
-  email: 'string',
-  comment: 'string',
-  creationDate: '2023-06-01T16:52:26.860Z'
+  name: 'TestName',
+  email: 'test@test.com',
+  comment: 'test comment'  
 };
 
 $.ajax({
