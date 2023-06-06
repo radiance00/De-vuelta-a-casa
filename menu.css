@@ -1,19 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>
-  h2 {
-    vertical-align: center;
-    text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-html, body {
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html,
+body {
   margin: 0;
   height: 100%;
 }
+
 .title {
   font-family: 'Viga', sans-serif;
-    color: #000000;
+  color: #000000;
 }
 
 * {
@@ -44,6 +44,7 @@ html, body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap; /* Agrega esta línea */
 }
 
 .menu > li {
@@ -51,10 +52,10 @@ html, body {
   overflow: hidden;
 }
 
-
 .menu a:link {
   color: white;
 }
+
 .menu a:visited {
   color: rgb(255, 255, 255);
 }
