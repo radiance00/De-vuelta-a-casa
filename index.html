@@ -54,17 +54,56 @@
   </section>
 
   <!-- Projects Section -->
+  <style>
+    #projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Ajusta la altura según sea necesario */
+    }
+  
+    .all-projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .success-case {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px; /* Espacio entre los recuadros de casos de éxito */
+    }
+  
+    .success-case-item {
+      width: 400px; /* Ajusta el ancho según sea necesario */
+      background-color: #f2f2f2; /* Color de fondo del recuadro */
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; /* Espacio entre los recuadros de casos de éxito */
+    }
+  
+    .success-case-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    }
+  
+    .success-case-caption {
+      text-align: center;
+    }
+  </style>
+  
   <section id="projects">
     <h1>Casos de éxito</h1>
     <div class="all-projects">
-      <br>
-      <br>
       <div class="success-case">
         <div class="success-case-carousel">
           <div class="success-case-item">
-            <img
-              src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg"
-              alt="Image 1">
+            <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" alt="Image 1">
             <div class="success-case-caption">
               <p>"El valiente corredor"<br><br>
                 En un tranquilo parque de la ciudad, un pequeño perro callejero llamado Max vivía sin un hogar. Un día,
@@ -97,8 +136,7 @@
             </div>
           </div>
           <div class="success-case-item">
-            <img src="https://www.animalesmascotas.com/wp-content/uploads/2018/07/gatos-y-perros-juntos.jpg"
-              alt="Image 3">
+            <img src="https://www.animalesmascotas.com/wp-content/uploads/2018/07/gatos-y-perros-juntos.jpg" alt="Image 3">
             <div class="success-case-caption">
               <p>"Amigos inseparables"<br><br>
                 En una fría noche de invierno, una gata callejera llamada Bella dio a luz a cuatro hermosos gatitos en
@@ -116,9 +154,16 @@
       </div>
     </div>
   </section>
+  
 
   <!-- End Projects Section -->
   <script src="index.js"></script>
 </body>
+
+<footer>
+  <p>&copy;Supervisor del curso: Raul Galvan</p>
+  <p>Fronten: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
+  <p>Baken: Andrea y Marcia</p>
+</footer>
 
 </html>
