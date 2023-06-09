@@ -43,6 +43,18 @@ body {
   border-radius: 8px;
 }
 
+#introduccion .container {
+  max-width: 800px;
+  width: 750px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: auto; /* Cambiado a "auto" para ajustar automáticamente la altura */
+}
+
 .success-case {
   text-align: center;
   width: 100%;
@@ -82,30 +94,21 @@ body {
 
 .success-case-caption {
   padding: 20px;
-  max-height: 80px;
+  max-height: 150px; /* Ajusta el valor de max-height según tus necesidades */
   overflow: hidden;
-  transition: max-height 0.3s ease;
 }
 
 .success-case-item:hover .success-case-caption {
-  max-height: 80px;
-}
-
-.success-case-caption p {
-  margin: 0;
-  font-size: 16px;
-  color: #777;
-  line-height: 1.5;
+  max-height: 150px; /* Ajusta el valor de max-height según tus necesidades */
 }
 
 .success-case-item:hover .case-content {
-  max-height: 1000px;
+  max-height: 1000px; /* Ajusta el valor de max-height según tus necesidades */
 }
 
 .case-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
   padding: 20px;
 }
 
@@ -115,4 +118,25 @@ body {
   line-height: 1.5;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
 
+.ignore-min-height {
+  min-height: initial !important;
+}
+
+.success-case-item {
+  height: 800px; /* Ajusta la altura deseada */
+}
+
+#introduccion {
+  margin-bottom: 750px; /* Ajusta el valor de margen inferior según tus necesidades */
+}
