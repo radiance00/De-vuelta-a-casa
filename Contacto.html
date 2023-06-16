@@ -23,8 +23,7 @@
       <li><a href="Adopcion.html">Adopción</a></li>
       <li><a href="Donaciones.html">Donaciones</a></li>
       <li><a href="Ventas.html">Ventas</a></li>
-      <li><a href="Contactos.html">Contacto</a></li>
-      <li><a href="Mapa.html">Mapa</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
     </ul>
   </section>
 </body>
@@ -43,8 +42,49 @@
     <input type="email" id="email" name="email" required>
     <label for="comment">Comentario:</label>
     <textarea id="comment" name="comment" required></textarea>
-    <input type="submit" value="Enviar">
+    <input type="submit" id="submit-btn" value="Enviar">
   </form>
+  <script>
+    document.getElementById('submit-btn').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+  
+      // Obtiene los valores de los campos del formulario
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var comment = document.getElementById('comment').value;
+  
+      // Crea un objeto con los datos del formulario
+      var formData = {
+        name: name,
+        email: email,
+        comment: comment
+      };
+  
+      // Realiza una solicitud POST utilizando fetch() y configura los encabezados adecuados
+      fetch('https://localhost:7235/api/Contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(function(response) {
+        // Maneja la respuesta del servidor
+        if (response.ok) {
+          console.log('Solicitud enviada exitosamente');
+          // Realiza alguna acción adicional después de que se envía el formulario
+        } else {
+          console.log('Error al enviar la solicitud');
+          // Maneja el error de la solicitud
+        }
+      })
+      .catch(function(error) {
+        console.log('Error de red:', error);
+        // Maneja el error de red
+      });
+    });
+  </script>
+  
 </body>
 <footer>
   <p>&copy;Supervisor del curso: Raul Galvan</p>

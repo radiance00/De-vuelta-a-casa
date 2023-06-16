@@ -6,28 +6,33 @@
     <link rel="stylesheet" href="./estilos.css">
     <link rel="stylesheet" href="./menu.css">
     <link rel="stylesheet" href="./Carousel.css">
+    <title>De Vuelta a casa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
-    <title>De Vuelta a casa</title>
+<script>
+  function redireccionar() {
+      window.location.href = "Contactos.html";
+  }
+</script>
 </head>
 
 <body>
     <!-- Header -->
     <section class="top-nav">
-        <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" width="50" height="30" alt="img">   
+        <img src="file:///C:/Users/ThinkPad/OneDrive/Im%C3%A1genes/Logo%20para%20adopciones.png" width="50" height="50" alt="img">   
         <input id="menu-toggle" type="checkbox" />
         <label class='menu-button-container' for="menu-toggle">
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
-            <li><a href="index.html">Inicio!</a></li>
             <li><a href="Adopcion.html">Adopcion!</a></li>
-            <li><a href="Donaciones.html">Donaciones!</a></li>
-            <li><a href="Ventas.html">Ventas!</a></li>
-            <li><a href="Contactos.html">Contacto!</a></li>
-            <li><a href="Mapa.html">Mapa</a></li>
-          </ul>    
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Adopcion.html">Adopción</a></li>
+          <li><a href="Donaciones.html">Donaciones</a></li>
+          <li><a href="Ventas.html">Ventas</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
     </section>
     <br>
     <br>
@@ -35,7 +40,8 @@
     <br>
     <br>
     <!-- End Header -->
-
+<center><p>¡Bienvenido a adopciones!</p></center>
+<center><h1>Selecciona al canino que quieras adoptar para que sea tu nuevo amigo</h1></center>
     <!DOCTYPE html>
 <html>
 <head>
@@ -48,7 +54,7 @@
       margin: 0 auto; /* Centrar el carrusel horizontalmente */
     }
     .carousel-item img {
-      width: 100%; /* Ajustar las imágenes al 100% del ancho del carrusel */
+      width: 50%; /* Ajustar las imágenes al 100% del ancho del carrusel */
       height: 100%; /* Ajustar las imágenes al 100% de la altura del carrusel */
     }
   </style>
@@ -61,30 +67,89 @@
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
   </ul>
 
   <!-- Diapositivas -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="file:///C:/Users/Grupo%20Mind/Downloads/OIG%20(1).jfif" alt="Image 1">
+      <img src="file:///C:/Users/ThinkPad/Downloads/image.png" alt="Image 1">
       <div class="carousel-caption">
-        <h3>Image 1</h3>
+        <h3>Maria
+          <br>
+          Edad aproximada:2 años
+          <br>
+          sexo:Hembra 
+          <br>
+          <br>
+          <center><button onclick="redireccionar()"type="submit">Contactar</button>
+          </center>
+          
+        </h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://th.bing.com/th/id/OIG.jItxIQawtrK5oTXYjTjC?pid=ImgGn" alt="Image 2">
+      <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FOIG.i823oeO29h2Ghz9Z3Ivf%3Fpid%3DImgGn" alt="Image 2">
       <div class="carousel-caption">
-        <h3>Image 2</h3>
+        <h3>Iker
+          <br>
+          Edad aproximada:4 años
+          <br>
+          sexo:Macho
+          <br>
+          <br>
+          <center><button onclick="redireccionar()"type="submit">Contactar</button></center>
+        </h3>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="https://th.bing.com/th/id/OIG.i823oeO29h2Ghz9Z3Ivf?pid=ImgGn" alt="Image 3">
+      <img src="https://slack-imgs.com/?c=1&o1=ro&url=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FOIG.wu_ejjIETbhLDcZ82Jke%3Fpid%3DImgGn" alt="Image 3">
       <div class="carousel-caption">
-        <h3>Image 3</h3>
+        <h3>
+          Ellie
+          <br>
+          Edad aproximada:3 años
+          <br>
+          sexo:Hembra
+          <br>
+          <br>
+          <center><button onclick="redireccionar()"type="submit">Contactar</button></center>
+        </h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://th.bing.com/th/id/OIG.BjcCCo9twaS9ynnKS8CN?pid=ImgGn" alt="Image 4">
+      <div class="carousel-caption">
+        <h3>
+          Aby
+          <br>
+          Edad aproximada:2 años
+          <br>
+          sexo:Hembra
+          <br>
+          <br>
+          <center><button onclick="redireccionar()"type="submit">Contactar</button></center>
+        </h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://th.bing.com/th/id/OIG.QdONFvdapWoe6BW5iWGP?pid=ImgGn" alt="Image 4">
+      <div class="carousel-caption">
+        <h3>
+          Max
+          <br>
+          Edad aproximada:4 años
+          <br>
+          sexo:Macho
+          <br>
+          <br>
+          <center><button onclick="redireccionar()" type="submit">Contactar</button></center>
+        </h3>
       </div>
     </div>
   </div>
-
+  
   <!-- Controles -->
   <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
