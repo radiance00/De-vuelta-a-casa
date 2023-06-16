@@ -1,19 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-</style>
-  h2 {
-    vertical-align: center;
-    text-align: center;
-  }
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-html, body {
+h2 {
+  vertical-align: center;
+  text-align: center;
+}
+
+html,
+body {
   margin: 0;
   height: 100%;
 }
+
 .title {
   font-family: 'Viga', sans-serif;
-    color: #000000;
+  color: #000000;
 }
 
 * {
@@ -44,17 +44,19 @@ html, body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  /* Agrega esta línea */
 }
 
-.menu > li {
+.menu>li {
   margin: 0 1rem;
   overflow: hidden;
 }
 
-
 .menu a:link {
   color: white;
 }
+
 .menu a:visited {
   color: rgb(255, 255, 255);
 }
@@ -95,16 +97,16 @@ html, body {
   margin-top: 8px;
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::before {
+#menu-toggle:checked+.menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button {
+#menu-toggle:checked+.menu-button-container .menu-button {
   background: rgb(0, 0, 0);
 }
 
-#menu-toggle:checked + .menu-button-container .menu-button::after {
+#menu-toggle:checked+.menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
@@ -113,6 +115,7 @@ html, body {
   .menu-button-container {
     display: flex;
   }
+
   .menu {
     position: absolute;
     top: 0;
@@ -123,20 +126,23 @@ html, body {
     justify-content: center;
     align-items: center;
   }
-  #menu-toggle ~ .menu li {
+
+  #menu-toggle~.menu li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  #menu-toggle:checked ~ .menu li {
+
+  #menu-toggle:checked~.menu li {
     border: 1px solid #000000;
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .menu > li {
+
+  .menu>li {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -145,7 +151,55 @@ html, body {
     color: white;
     background-color: #000000;
   }
-  .menu > li:not(:last-child) {
+
+  .menu>li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+
+.menu {
+  list-style: none;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: #ffc107;
+}
+
+
+.menu-button {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+  
+.menu-button:before,
+.menu-button:after {
+content: "";
+display: block;
+width: 25px;
+height: 3px;
+background-color: #fff;
+margin-bottom: 5px;
+}
+
+.menu-button-container:hover .menu-button:before,
+.menu-button-container:hover .menu-button:after {
+background-color: #ffc107;
 }

@@ -1,22 +1,131 @@
-#projects {
-    text-align: center;
-  }
-  
-  .carousel-item img {
-    max-height: 400px;
-    width: auto;
-    margin: 0 auto;
-  }
-  
-  .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .carousel-item:not(:last-child) {
-    margin-bottom: 50px;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#introduccion {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#introduccion h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+#introduccion h2 {
+  font-size: 18px;
+  color: #555;
+}
+
+#introduccion p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+#introduccion img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#introduccion .container {
+  max-width: 800px;
+  width: 750px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: auto; /* Cambiado a "auto" para ajustar automáticamente la altura */
+}
+
+.success-case {
+  text-align: center;
+  width: 100%;
+}
+
+.all-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-case h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.success-case-item {
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+}
+
+.success-case-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.success-case-caption {
+  padding: 20px;
+  max-height: 150px; /* Ajusta el valor de max-height según tus necesidades */
+  overflow: hidden;
+}
+
+.success-case-item:hover .success-case-caption {
+  max-height: 150px; /* Ajusta el valor de max-height según tus necesidades */
+}
+
+.success-case-item:hover .case-content {
+  max-height: 1000px; /* Ajusta el valor de max-height según tus necesidades */
+}
+
+.case-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.case-content p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+.ignore-min-height {
+  min-height: initial !important;
+}
+
+.success-case-item {
+  height: 800px; /* Ajusta la altura deseada */
+}
+
+#introduccion {
+  margin-bottom: 750px; /* Ajusta el valor de margen inferior según tus necesidades */
+}

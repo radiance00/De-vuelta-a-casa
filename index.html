@@ -6,27 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./estilos.css">
   <link rel="stylesheet" href="./menu.css">
-  <title>De Vuelta a casa</title>
+  <link rel="stylesheet" href="./index.css">
+  <title>De Vuelta a Casa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Viga&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
+   <!-- Projects Section -->
+   <style>
+    #projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /* Ajusta la altura según sea necesario */
+    }
+
+    .all-projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .success-case {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      /* Espacio entre los recuadros de casos de éxito */
+    }
+
+    .success-case-item {
+      width: 50%;
+      /* Ajusta el ancho según sea necesario */
+      background-color: black;
+      /* Color de fondo del recuadro */
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      /* Espacio entre los recuadros de casos de éxito */
+    }
+
+    .success-case-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      /* Espacio entre la imagen y el texto */
+    }
+
+    .success-case-caption {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Header -->
   <section class="top-nav">
-    <img src="https://cdn-icons-png.flaticon.com/512/263/263115.png" width="30" height="30" alt="img">
+    <img src="file:///C:/Users/ThinkPad/OneDrive/Im%C3%A1genes/Logo%20para%20adopciones.png" width="50" height="50" alt="img">
     <input id="menu-toggle" type="checkbox" />
     <label class='menu-button-container' for="menu-toggle">
       <div class='menu-button'></div>
     </label>
     <ul class="menu">
-      <li><a href="index.html">Inicio!</a></li>
-      <li><a href="Adopcion.html">Adopcion!</a></li>
-      <li><a href="Donaciones.html">Donaciones!</a></li>
-      <li><a href="Ventas.html">Ventas!</a></li>
-      <li><a href="Contacto.html">Contacto!</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Adopcion.html">Adopción</a></li>
+      <li><a href="Donaciones.html">Donaciones</a></li>
+      <li><a href="Ventas.html">Ventas</a></li>
+      <li><a href="Contactos.html">Contacto</a></li>
+      <li><a href="Mapa.html">Mapa</a></li>
     </ul>
   </section>
   <br>
@@ -35,86 +86,116 @@
   <br>
   <br>
   <!-- End Header -->
- 
-  <!-- Projects Section -->
+
+  <!-- Introducción -->
+  <section id="introduccion">
+    <div class="container ignore-min-height">
+      <div class="project-info">
+        <h1>DE VUELTA A CASA</h1>
+        <h2>Asociación de rescate y adopción animal</h2>
+        <p>Sobre nosotros</p>
+        <p>Esta asociación se creó con el objetivo de ayudar a todos esos animales que constantemente se encuentran en
+          las calles.</p>
+        <img
+          src="https://estaticos-cdn.prensaiberica.es/clip/66e86d63-f5d3-4752-b019-29e28f5079a5_16-9-discover-aspect-ratio_default_0.jpg"
+          width="500" height="300" alt="Introducción">
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <section id="projects">
+    <h1>Casos de éxito</h1>
     <div class="all-projects">
-      <div class="project-item">
-        <div class="project-info">
-          <h1>DE VUELTA A CASA</h1>
-          <h2>Asociacion de rescate y adopcion animal</h2>
-          <p>Sobre nosotros
-            <br>
-            Esta asociacion se creó con el objetivo de ayudar a todos esos animales que constantemente se encuentran en
-            las calles
-          </p>
-          <img src="https://estaticos-cdn.prensaiberica.es/clip/66e86d63-f5d3-4752-b019-29e28f5079a5_16-9-discover-aspect-ratio_default_0.jpg" width="500" height="300" />
-        </div>
-      </div>
-      <h1>Casos de éxito</h1>
-      <br>
-      <br>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Estilo personalizado para el carrusel -->
-        <style>
-          #myCarousel {
-            width: 800px; /* Ancho del carrusel */
-            height: 400px; /* Altura del carrusel */
-            margin: 0 auto; /* Centrar el carrusel horizontalmente */
-          }
-        </style>
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Diapositivas -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg" alt="Image 1">
-            <div class="carousel-caption">
+      <div class="success-case">
+        <div class="success-case-carousel">
+          <div class="success-case-item">
+            <img
+              src="https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg"
+              alt="Image 1">
+            <div class="success-case-caption">
               <p>"El valiente corredor"<br><br>
-              En un tranquilo parque de la ciudad, un pequeño perro callejero llamado Max vivía sin un hogar. Un día, mientras Max merodeaba por las calles en busca de comida, vio a un grupo de personas corriendo en el parque. De repente, uno de los corredores tropezó y cayó al suelo, lastimándose gravemente.<br>
-              Sin pensarlo dos veces, Max se acercó corriendo al corredor caído y comenzó a ladrar para llamar la atención de los demás. Sus ladridos alertaron a los otros corredores, quienes rápidamente se acercaron y llamaron a una ambulancia.<br>
-              El corredor herido recibió atención médica de inmediato y se recuperó gracias a la rápida acción de Max. Agradecido por el valiente acto del perro callejero, el corredor decidió adoptarlo y llevarlo a su hogar, donde Max finalmente encontró un lugar seguro y amoroso para vivir.</p>
+                En un tranquilo parque de la ciudad, un pequeño perro callejero llamado Max vivía sin un hogar. Un día,
+                mientras Max merodeaba por las calles en busca de comida, vio a un grupo de personas corriendo en el
+                parque. De repente, uno de los corredores tropezó y cayó al suelo, lastimándose gravemente.<br>
+                Sin pensarlo dos veces, Max se acercó corriendo al corredor caído y comenzó a ladrar para llamar la
+                atención de los demás. Sus ladridos alertaron a los otros corredores, quienes rápidamente se acercaron y
+                llamaron a una ambulancia.<br>
+                El corredor herido recibió atención médica de inmediato y se recuperó gracias a la rápida acción de Max.
+                Agradecido por el valiente acto del perro callejero, el corredor decidió adoptarlo y llevarlo a su
+                hogar, donde Max finalmente encontró un lugar seguro y amoroso para vivir.</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="success-case-item">
             <img src="https://humanidades.com/wp-content/uploads/2017/02/perro-3-e1561679226953.jpg" alt="Image 2">
-            <div class="carousel-caption">
+            <div class="success-case-caption">
               <p>"El viaje de la esperanza"<br><br>
-              En un remoto pueblo de montaña, una fuerte tormenta azotó la zona y causó una inundación repentina. En medio del caos, un perro llamado Luna quedó atrapado en una casa abandonada mientras el agua seguía subiendo rápidamente.<br>
-              Afortunadamente, un equipo de rescate de animales recibió una llamada de emergencia y se apresuró a la zona afectada. Cuando llegaron a la casa abandonada, encontraron a Luna asustada y empapada, luchando por mantenerse a salvo.<br>
-              Con valentía y determinación, los rescatistas se adentraron en las aguas turbias y lograron salvar a Luna justo a tiempo. Después de secarla y brindarle cuidado médico, llevaron a Luna a un refugio de animales cercano.<br>
-              La historia de Luna se hizo viral en las redes sociales y llegó al corazón de una familia amorosa que vivía en la ciudad. Decidieron adoptar a Luna y darle un hogar cálido y cariñoso. Ahora, Luna disfruta de largos paseos por el parque y está rodeada de amor y seguridad.</p>
+                En un remoto pueblo de montaña, una fuerte tormenta azotó la zona y causó una inundación repentina. En
+                medio del caos, un perro llamado Luna quedó atrapado en una casa abandonada mientras el agua seguía
+                subiendo rápidamente.<br>
+                Afortunadamente, un equipo de rescate de animales recibió una llamada de emergencia y se apresuró a la
+                zona afectada. Cuando llegaron a la casa abandonada, encontraron a Luna asustada y empapada, luchando
+                por mantenerse a salvo.<br>
+                Con valentía y determinación, los rescatistas se adentraron en las aguas turbias y lograron salvar a
+                Luna justo a tiempo. Después de secarla y brindarle cuidado médico, llevaron a Luna a un refugio de
+                animales cercano.<br>
+                La historia de Luna se hizo viral en las redes sociales y llegó al corazón de una familia amorosa que
+                vivía en la ciudad. Decidieron adoptar a Luna y darle un hogar cálido y cariñoso. Ahora, Luna disfruta
+                de largos paseos por el parque y está rodeada de amor y seguridad.</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="https://soyunperro.com/wp-content/uploads/2019/07/perro-relamiendose-770x470.jpg" alt="Image 3">
-            <div class="carousel-caption">
-              <p>"El lazo de amistad"<br><br>
-              En un barrio tranquilo, un perro callejero llamado Buddy había estado vagando solo durante mucho tiempo. Un día, mientras buscaba comida en un callejón, encontró a un gato asustado y herido que había sido abandonado.<br>
-              Buddy, con su corazón lleno de compasión, se acercó al gato y lo reconfortó. Juntos, se convirtieron en compañeros inseparables y buscaron refugio en un jardín abandonado. Aunque no tenían un hogar, se tenían el uno al otro.<br>
-              Una tarde, una niña local llamada Sara pasaba por el jardín y vio a Buddy y al gato. Conmovida por la ternura de su amistad, decidió llevarlos a su casa y pedir permiso a sus padres para adoptarlos.<br>
-              La familia de Sara acogió a Buddy y al gato, a quienes llamaron Max</p>
+          <div class="success-case-item">
+            <img src="https://media.traveler.es/photos/613760adcb06ad0f20e11980/master/w_1600%2Cc_limit/202931.jpg"
+              alt="Image 3">
+            <div class="success-case-caption">
+              <p>"Amigos inseparables"<br><br>
+                En una fría noche de invierno, una gata callejera llamada Bella dio a luz a cuatro hermosos gatitos en
+                un oscuro callejón. Pero Bella estaba muy débil y no podía proporcionarles el cuidado adecuado.<br>
+                Afortunadamente, una mujer llamada Laura pasaba por el callejón y escuchó los débiles maullidos de los
+                gatitos. Con compasión en su corazón, decidió llevar a Bella y a sus gatitos a su hogar.<br>
+                Laura también tenía un perro llamado Max, quien rápidamente se hizo amigo de Bella y sus gatitos. Max
+                los protegía y jugaba con ellos, creando un vínculo especial entre todos.<br>
+                Con el tiempo, Bella y sus gatitos encontraron hogares amorosos, pero Max y Bella siguieron siendo
+                amigos inseparables. Ahora, disfrutan de largas siestas juntos y comparten momentos de alegría en su
+                hogar feliz.</p>
             </div>
           </div>
         </div>
-
-        <!-- Controles -->
-        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
       </div>
+    </div>
+  </section>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </section>
-  </body>
+
+  <!-- End Projects Section -->
+  <script src="index.js"></script>
+</body>
+
+<footer>
+  <p>&copy;Supervisor del curso: Raul Galvan</p>
+  <p>Frontend: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
+  <p>Bakend: Damariz, Andrea y Marcia</p>
+</footer>
+
 </html>
