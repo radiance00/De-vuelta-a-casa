@@ -19,17 +19,17 @@
   }
   
   .project-item {
+    max-height: 350px;
     flex: 1 0 25%;
     max-width: 300px;
     margin: 1rem;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    padding: 1rem;
+    /* background-color: #f1f1f1;
+    border: 1px solid #ccc; */
+    /* padding: 1rem; */
     text-align: center;
   }
   
-  .project-item img {
-    max-width: 100%;
+  .project-item img {    
     height: auto;
   }
   
@@ -165,6 +165,10 @@
   #menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
+  }
+
+  .sales img{
+    width: 150px !important;
   }
   
   @media (max-width: 700px) {
