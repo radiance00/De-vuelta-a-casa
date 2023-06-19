@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos.css">
-    <link rel="stylesheet" href="./menu.css">
-    <link rel="stylesheet" href="./index.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilos.css">
+  <link rel="stylesheet" href="./menu.css">
+  <link rel="stylesheet" href="./index.css">
   <title>Formulario de Contacto</title>
   <link rel="stylesheet" type="text/css" href="EstilosCON.css">
+  <style>
+    /* Estilos para el contenedor del mapa */
+    #map-container {
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+
 <body>
   <!-- Header -->
   <section class="top-nav">
@@ -26,14 +35,7 @@
       <li><a href="Contacto.html">Contacto</a></li>
     </ul>
   </section>
-</body>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<body>
+
   <h1>Formulario de Contacto</h1>
   <form id="contact-form">
     <label for="name">Nombre:</label>
@@ -44,51 +46,66 @@
     <textarea id="comment" name="comment" required></textarea>
     <input type="submit" id="submit-btn" value="Enviar">
   </form>
+
+  <div id="map-container"></div>
+
   <script>
     document.getElementById('submit-btn').addEventListener('click', function(event) {
       event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-  
+
       // Obtiene los valores de los campos del formulario
       var name = document.getElementById('name').value;
       var email = document.getElementById('email').value;
       var comment = document.getElementById('comment').value;
-  
+
       // Crea un objeto con los datos del formulario
       var formData = {
         name: name,
         email: email,
         comment: comment
       };
-  
+
       // Realiza una solicitud POST utilizando fetch() y configura los encabezados adecuados
       fetch('https://localhost:7235/api/Contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(function(response) {
-        // Maneja la respuesta del servidor
-        if (response.ok) {
-          console.log('Solicitud enviada exitosamente');
-          // Realiza alguna acción adicional después de que se envía el formulario
-        } else {
-          console.log('Error al enviar la solicitud');
-          // Maneja el error de la solicitud
-        }
-      })
-      .catch(function(error) {
-        console.log('Error de red:', error);
-        // Maneja el error de red
-      });
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+        .then(function(response) {
+          // Maneja la respuesta del servidor
+          if (response.ok) {
+            console.log('Solicitud enviada exitosamente');
+            // Realiza alguna acción adicional después de que se envía el formulario
+          } else {
+            console.log('Error al enviar la solicitud');
+            // Maneja el error de la solicitud
+          }
+        })
+        .catch(function(error) {
+          console.log('Error de red:', error);
+          // Maneja el error de red
+        });
     });
   </script>
-  
+
+  <footer>
+    <p>&copy;Supervisor del curso: Raul Galvan</p>
+    <p>Frontend: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
+    <p>Bakend: Damariz, Andrea y Marcia</p>
+  </footer>
+
+  <script>
+    function initMap() {
+      // Crea un objeto de mapa y lo asigna al elemento <div> con el id "map"
+      var map = new google.maps.Map(document.getElementById('map-container'), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKJ1SImObo0JFwq_JlRrDoazvyKe_ifEs&callback=initMap"></script>
 </body>
-<footer>
-  <p>&copy;Supervisor del curso: Raul Galvan</p>
-  <p>Frontend: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
-  <p>Bakend: Damariz, Andrea y Marcia</p>
-</footer>
+
 </html>
