@@ -1,19 +1,17 @@
 <head>
-  <div id="map"></div>
   <script>
-      function initMap() {
-        // Crea un objeto de mapa y lo asigna al elemento <div> con el id "map"
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-<script>
-  // Llama a la función initMap() cuando el documento esté completamente cargado
-  document.addEventListener('DOMContentLoaded', initMap);
-</script>
-      
-  <script src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API"></script>
-
+    function initMap() {
+      // Crea un objeto de mapa y lo asigna al elemento <div> con el id "map"
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+  </script>
 </head>
+
+<body>
+  <div id="map"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKJ1SImObo0JFwq_JlRrDoazvyKe_ifEs&callback=initMap"></script>
+</body>
