@@ -55,7 +55,7 @@
   <div id="map-container"></div>
 
   <script>
-    document.getElementById('submit-btn').addEventListener('click', function(event) {
+    document.getElementById('submit-btn').addEventListener('click', function (event) {
       event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
 
       // Obtiene los valores de los campos del formulario
@@ -72,13 +72,13 @@
 
       // Realiza una solicitud POST utilizando fetch() y configura los encabezados adecuados
       fetch('http://localhost:8083/api/Contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        })
-        .then(function(response) {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+        .then(function (response) {
           // Maneja la respuesta del servidor
           if (response.ok) {
             console.log('Solicitud enviada exitosamente');
@@ -88,9 +88,12 @@
             // Maneja el error de la solicitud
           }
         })
-        .catch(function(error) {
+        .catch(function (error) {
           console.log('Error de red:', error);
           // Maneja el error de red
+        }).finally(function () {
+          alert("Solicitud enviada exitosamente");
+          document.location.reload();
         });
     });
   </script>
@@ -110,40 +113,43 @@
       });
     }
   </script>
- <!DOCTYPE html>
- <html>
- <head>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async defer></script>
-   <script>
-     function initMap() {
-       // Verifica si el navegador soporta la Geolocalización
-       if (navigator.geolocation) {
-         // Obtiene la ubicación actual del usuario
-         navigator.geolocation.getCurrentPosition(function(position) {
-           var latitude = position.coords.latitude;
-           var longitude = position.coords.longitude;
-           
-           // Crea un objeto de mapa y lo asigna al elemento <div> con el id "map"
-           var map = new google.maps.Map(document.getElementById('map-container'), {
-             center: { lat: latitude, lng: longitude },
-             zoom: 8
-           });
- 
-           // Crea un marcador en la ubicación actual
-           var marker = new google.maps.Marker({
-             position: { lat: latitude, lng: longitude },
-             map: map,
-             title: '¡Estoy aquí!'
-           });
-         });
-       } else {
-         alert('Tu navegador no soporta la Geolocalización.');
-       }
-     }
-   </script>
- </head>
- <body>
-   <div id="map-container" style="width: 100%; height: 400px;"></div>
- </body>
+  <!DOCTYPE html>
+  <html>
 
- </html>
+  <head>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap"
+      async defer></script>
+    <script>
+      function initMap() {
+        // Verifica si el navegador soporta la Geolocalización
+        if (navigator.geolocation) {
+          // Obtiene la ubicación actual del usuario
+          navigator.geolocation.getCurrentPosition(function (position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+
+            // Crea un objeto de mapa y lo asigna al elemento <div> con el id "map"
+            var map = new google.maps.Map(document.getElementById('map-container'), {
+              center: { lat: latitude, lng: longitude },
+              zoom: 8
+            });
+
+            // Crea un marcador en la ubicación actual
+            var marker = new google.maps.Marker({
+              position: { lat: latitude, lng: longitude },
+              map: map,
+              title: '¡Estoy aquí!'
+            });
+          });
+        } else {
+          alert('Tu navegador no soporta la Geolocalización.');
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="map-container" style="width: 100%; height: 400px;"></div>
+  </body>
+
+  </html>

@@ -97,6 +97,9 @@
         .catch(function (error) {
           console.log('Error de red:', error);
           // Maneja el error de red
+        }).finally(function () {
+          alert("Gracias por tu donativo!");
+          document.location.reload();
         });
     });
   </script>
