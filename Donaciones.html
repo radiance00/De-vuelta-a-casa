@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <title>De Vuelta a casa</title>
 </head>
+​
 
 <body>
   <!-- Header -->
@@ -30,7 +32,7 @@
       </ul>
     </section>
   </header>
-
+  ​
   <div class="donation">
     <form class="payment_form">
       <h1>Donaciones</h1>
@@ -40,7 +42,7 @@
       </div>
       <div class="input-container">
         <label for="email">Email</label>
-        <input type="email" placeholder="@Gmail" name="email" id="email" class="input-field" autocomplete="email">
+        <input type="email" placeholder="@mail" name="email" id="email" class="input-field" autocomplete="email">
       </div>
       <div class="input-container">
         <label for="cantidad">Cantidad que se desea donar</label>
@@ -48,21 +50,62 @@
       </div>
       <div class="input-container">
         <label for="tarjeta">Número de tarjeta</label>
-        <input type="text" name="tarjeta" id="tarjeta" class="input-field">
+        <input type="number" minlength="12" maxlength="12" name="tarjeta" id="tarjeta" class="input-field">
       </div>
       <br>
       <br>
-      <button type="submit">Enviar</button>
+      <input type="submit" id="submit-btn" value="Donar!">
     </form>
   </div>
 
+  <script>
+    document.getElementById('submit-btn').addEventListener('click', function (event) {
+      event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+
+      // Obtiene los valores de los campos del formulario
+      var name = document.getElementById('nombre').value;
+      var email = document.getElementById('email').value;
+      var amount = document.getElementById('cantidad').value;
+      var card = document.getElementById('tarjeta').value;
+
+      // Crea un objeto con los datos del formulario
+      var formData = {
+        name: name,
+        email: email,
+        amount: amount,
+        card: card
+      };
+
+      // Realiza una solicitud POST utilizando fetch() y configura los encabezados adecuados
+      fetch('http://localhost:8083/api/Donation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+        .then(function (response) {
+          // Maneja la respuesta del servidor
+          if (response.ok) {
+            console.log('Solicitud enviada exitosamente');
+            // Realiza alguna acción adicional después de que se envía el formulario
+          } else {
+            console.log('Error al enviar la solicitud');
+            // Maneja el error de la solicitud
+          }
+        })
+        .catch(function (error) {
+          console.log('Error de red:', error);
+          // Maneja el error de red
+        });
+    });
+  </script>
   <footer>
-    <!-- Aquí puedes agregar contenido para el footer -->
-  </footer>
+    <p>&copy;Supervisor del curso: Raul Galvan</p>
+    <p>Frontend: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
+    <p>Bakend: Damariz, Andrea y Marcia</p>
+  </footer> ​
+
 </body>
-<footer>
-  <p>&copy;Supervisor del curso: Raul Galvan</p>
-  <p>Frontend: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
-  <p>Bakend: Damariz, Andrea y Marcia</p>
-</footer>
+
 </html>
