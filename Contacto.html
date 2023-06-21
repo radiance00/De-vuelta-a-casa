@@ -71,7 +71,7 @@
       };
 
       // Realiza una solicitud POST utilizando fetch() y configura los encabezados adecuados
-      fetch('http://localhost:8083/api/Contact', {
+      fetch('http://localhost:7235/api/Contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -81,19 +81,18 @@
         .then(function (response) {
           // Maneja la respuesta del servidor
           if (response.ok) {
-            console.log('Solicitud enviada exitosamente');
-            // Realiza alguna acción adicional después de que se envía el formulario
+             alert("Solicitud enviada exitosamente alguien te contactara pronto");
+             document.location.reload();
           } else {
             console.log('Error al enviar la solicitud');
             // Maneja el error de la solicitud
           }
         })
         .catch(function (error) {
-          console.log('Error de red:', error);
-          // Maneja el error de red
-        }).finally(function () {
-          alert("Solicitud enviada exitosamente");
+          alert("Algun error ha ocurrido favor de contactar al departamento de sistemas");
           document.location.reload();
+        }).finally(function () {
+          //
         });
     });
   </script>
