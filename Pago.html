@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="./estilospago.css">
+<script src="./Funcionespago.js"></script>
+  <link rel="stylesheet" href="./menu.css">
+  <script>
+    function redireccionar() {
+        window.location.href = "Pago.html";
+    }
+  </script>
+
+
+  <div class="donation">
+    <form class="payment_form">
+      <h1>Pago</h1>
+      <h2>Por favor ingresa los datos de tu tarjeta de credito para completar la compra</h2>
+      <img src="Assets/galleta1.jpg" width="450px" height="300px" alt="galleta">
+      <div class="input-container">
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="input-field" autocomplete="name">
+      </div>
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input type="email" placeholder="@Gmail" name="email" id="email" class="input-field" autocomplete="email">
+      </div>
+      <div class="input-container">
+        <label for="cantidad">Numero de Tarjeta</label>
+        <input type="text" placeholder="00/00" name="cantidad" id="cantidad" class="input-field" autocomplete="off">
+      </div>
+      <div class="input-container">
+        <label for="tarjeta">Fecha de Expiración</label>
+        <input type="text" name="tarjeta" id="tarjeta" class="input-field">
+      </div>
+      <div class="input-container">
+        <label for="tarjeta">Codigo de seguridad</label>
+        <input type="text" name="tarjeta" id="tarjeta" class="input-field">
+      </div>
+      <br>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <footer>
+    <!-- Aquí puedes agregar contenido para el footer -->
+  </footer>
+</body>
+<footer>
+  <p>&copy;Supervisor del curso: Raul Galvan</p>
+  <p>Frontend: Leonardo, Nicolas, Jose, Emiliano, Damariz, Keara y Adrian</p>
+  <p>Bakend: Damariz, Andrea y Marcia</p>
+</footer>
+</html>
