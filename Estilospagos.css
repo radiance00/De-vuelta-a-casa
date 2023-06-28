@@ -1,0 +1,87 @@
+body {
+	background-image: url(https://thumbs.dreamstime.com/b/fondo-seco-de-la-comida-perro-alimento-para-animales-124173068.jpg);
+	background-repeat: repeat;
+	background-size: cover;
+  }
+  h1 {
+	font-family: 'Viga', sans-serif;
+}
+h2 {
+	font-family: 'Viga', sans-serif;
+}
+h3 {
+	font-family: 'Viga', sans-serif;
+}
+p {
+	font-family: 'Viga', sans-serif;
+}
+
+  .container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	box-sizing: border-box;
+  }
+  
+  .donation {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 500px;
+	border: 3px solid rgb(242, 247, 242);
+	padding: 20px;
+	background-color: rgb(84, 125, 129);
+	color: #fff;
+	margin-top: 60px;
+  }
+  
+  .donation input[type="text"],
+  .donation input[type="email"] {
+	width: 100%;
+	padding: 8px;
+	font-size: 1.6rem;
+	border: none;
+	background: rgba(255, 255, 255, 0.5);
+	margin-bottom: 10px;
+	color: #000;
+  }
+  
+  .donation button[type="submit"] {
+	width: 100%;
+	padding: 12px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  .donation button[type="submit"]:hover {
+	background-color: #00a000;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+  }
+  
+  .donation button[type="submit"]:active {
+	transform: translateY(-1px);
+  }
+  
+  .top-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(84, 125, 129);
+	z-index: 1;
+  }

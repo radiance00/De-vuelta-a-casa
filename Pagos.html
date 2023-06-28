@@ -1,0 +1,79 @@
+<html><head><link rel="stylesheet" href="./Estilospagos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&amp;family=Viga&amp;display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  
+  </head><body><div class="donation">
+      <form class="payment_form">
+        <h1>Pago</h1>
+        <h2>Agregue la información necesaria aqui para completar la compra</h2>
+        <div class="input-container">
+          <h3 for="nombre">Nombre</h3>
+          <input type="text" placeholder="Nombre" name="nombre" id="nombre" class="input-field" autocomplete="name">
+        </div>
+        <div class="input-container">
+          <h3 for="email">Email</h3>
+          <input type="email" placeholder="@mail" name="email" id="email" class="input-field" autocomplete="email">
+        </div>
+        <div class="input-container">
+          <h3 for="cantidad">Número de tarjeta</h3>
+          <input type="text" placeholder="$" name="cantidad" id="cantidad" class="input-field" autocomplete="off">
+        </div>
+        <div class="input-container">
+          <h3 for="tarjeta">Fecha de expiración</h3>
+          <input type="text" pattern="\d*" minlength="12" name="tarjeta" id="tarjeta" class="input-field">
+        </div>
+        <div class="input-container">
+          <h3 for="cantidad">Codigo de seguridad</h3>
+          <input type="text" placeholder="00/00" name="cantidad" id="cantidad" class="input-field" autocomplete="off">
+        </div>
+        <br>
+        <br>
+        <input type="submit" id="submit-btn" value="Donar!">
+      </form>
+    </div>
+  
+    <script>
+      document.getElementById('submit-btn').addEventListener('click', function (event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+  
+        // Obtiene los valores de los campos del formulario
+        var name = document.getElementById('nombre').value;
+        var email = document.getElementById('email').value;
+        var amount = document.getElementById('cantidad').value;
+        var card = document.getElementById('tarjeta').value;
+  
+        // Crea un objeto con los datos del formulario
+        var formData = {
+          name: name,
+          email: email,
+          amount: amount,
+          card: card
+        };
+  
+        // Realiza una solicitud POST utilizando fetch() y configura los encabezados adecuados
+        fetch('http://localhost:7235/api/Donation', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+          .then(function (response) {
+            // Maneja la respuesta del servidor
+            if (response.ok) {
+              alert("Gracias por tu donativo!");
+              document.location.reload();
+            } else {
+              console.log('Error al enviar la solicitud');
+              // Maneja el error de la solicitud
+            }
+          })
+          .catch(function (error) {
+            alert("Algun error ha ocurrido favor de contactar al departamento de sistemas");
+            document.location.reload();
+          }).finally(function () {
+  
+          });
+      });
+    </script></body></html>
